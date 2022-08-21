@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
-import { Input, ButtonAdd, Difference } from "../style/CalorieStyle";
-import { GlobalContext } from "./context/GlobalState";
+import { Input, ButtonAdd } from "../../style/CalorieStyle";
+import { GlobalContext } from "../context/GlobalState";
 
 export const AddItems = () => {
   const [text, setText] = useState("");

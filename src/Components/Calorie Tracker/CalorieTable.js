@@ -9,8 +9,8 @@ import {
   Value,
   DiffValue,
   InputCalorie,
-} from "../style/CalorieStyle";
-import { GlobalContext } from "./context/GlobalState";
+} from "../../style/CalorieStyle";
+import { GlobalContext } from "../context/GlobalState";
 
 export const CalorieTable = () => {
   const { calories } = useContext(GlobalContext);

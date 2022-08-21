@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Calorie } from "./Calorie";
-import { Ul } from "../style/CalorieStyle";
-import { GlobalContext } from "./context/GlobalState";
+import { Ul } from "../../style/CalorieStyle";
+import { GlobalContext } from "../context/GlobalState";
 
 export const ItemsList = ({ calorie }) => {
   const { calories } = useContext(GlobalContext);

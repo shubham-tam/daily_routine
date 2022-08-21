@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
-import { Li, ButtonDeleteItem } from "../style/CalorieStyle";
-import { GlobalContext } from "./context/GlobalState";
+// import { Li, ButtonDeleteItem } from "../style/CalorieStyle";
+import { Li, ButtonDeleteItem } from "../../style/CalorieStyle";
+import { GlobalContext } from "../context/GlobalState";
 
 export const Calorie = ({ calorie }) => {
   const { deleteCalorie } = useContext(GlobalContext);
