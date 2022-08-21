@@ -1,7 +1,8 @@
 import "./App.css";
+import { CalorieTracker } from "./CalorieTracker";
 
 function App() {
-  return <div>yesss</div>;
+  return <CalorieTracker />;
 }
 
 export default App;
