@@ -2,23 +2,26 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 const Tym = styled.div`
-  display: inline-block;
-  font-size: 24px;
+  font-size: 19px;
 `;
 
 export class TimeComponent extends Component {
-  constructor() {
-    super();
-    var today = new Date(),
-      time =
-        today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+  state = {
+    date: new Date(),
+  };
 
-    this.state = {
-      currentTime: time,
-    };
+  callMe() {
+    setInterval(() => {
+      this.setState({ date: new Date() });
+    }, 1000);
   }
 
   render() {
-    return <Tym>{this.state.currentTime}</Tym>;
+    return (
+      <>
+        <Tym>{this.state.date.toLocaleTimeString("it-IT")}</Tym>
+        {this.callMe()}
+      </>
+    );
   }
 }

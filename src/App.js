@@ -1,14 +1,12 @@
 import "./App.css";
 import { CalorieTracker } from "./CalorieTracker";
-import { DateNTime } from "./DateNTime";
-import { Message } from "./Message";
 import { ToDoList } from "./ToDoList";
+import { MessageAndTime } from "./MessageAndTime";
 
 function App() {
   return (
     <>
-      <DateNTime />
-      <Message />
+      <MessageAndTime />
       <ToDoList />
       <CalorieTracker />
     </>

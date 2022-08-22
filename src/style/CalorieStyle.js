@@ -15,6 +15,7 @@ export const CalorieDataTable = styled.div`
 
 export const Target = styled.div``;
 export const Current = styled.div``;
+
 export const InputCalorie = styled.input`
   font-size: 14px;
   // background-color: #ffdfcc;
