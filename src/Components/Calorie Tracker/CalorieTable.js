@@ -4,7 +4,6 @@ import {
   CalorieDataTable,
   Target,
   Current,
-  Difference,
   H1,
   Value,
   DiffValue,
@@ -48,6 +47,17 @@ export const CalorieTable = () => {
   const HeaderValue = styled.h3`
     font-size: 24px;
 
+    color: ${difference < 0 ? "red" : "#28A228"};
+  `;
+
+  const Difference = styled.div`
+    display: flex;
+    width: 350px;
+    font-weight: 600;
+    font-size: 20px;
+    // background-color: #fff;
+    background-color: #ffdfcc;
+    padding: 10px;
     color: ${difference < 0 ? "red" : "#28A228"};
   `;
 

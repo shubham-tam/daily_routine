@@ -58,17 +58,6 @@ export const Value = styled.div`
   // border-right: 1px solid #dedede;
 `;
 
-export const Difference = styled.div`
-  display: flex;
-  width: 350px;
-  font-weight: 600;
-  font-size: 20px;
-  // background-color: #fff;
-  background-color: #ffdfcc;
-  padding: 10px;
-  // box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-`;
-
 export const DiffValue = styled.div`
   display: flex;
   //   justify-content: center;
@@ -111,7 +100,7 @@ export const Li = styled.li`
   justify-content: space-between;
   position: relative;
   padding: 10px;
-  // margin: 10px 0;
+  margin: 10px 0px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 
   &:hover ${ButtonDeleteItem} {
