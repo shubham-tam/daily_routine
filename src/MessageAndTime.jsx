@@ -5,6 +5,7 @@ import { DateNTime } from "./Components/Message and DateTime/DateNTime";
 
 const Wrapper = styled.div`
   display: inline-block;
+  position: absolute;
 `;
 
 export const MessageAndTime = () => {

@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-// import { Li, ButtonDeleteItem } from "../style/CalorieStyle";
 import { Li, ButtonDeleteItem } from "../../style/CalorieStyle";
 import { GlobalContext } from "../context/GlobalState";
 

@@ -8,6 +8,13 @@ const initialState = {
     // { id: 3, text: "Vegetables", amount: 150 },
     // { id: 4, text: "Coke", amount: 250 },
   ],
+
+  lists: [
+    // { id: 1, text: "Rice" },
+    // { id: 2, text: "Chicken" },
+    // { id: 3, text: "Vegetables" },
+    // { id: 4, text: "Coke" },
+  ],
 };
 
 // Create context
@@ -28,12 +35,27 @@ export const GlobalProvider = ({ children }) => {
     dispatch({ type: "ADD_CALORIES", payload: calorie });
   }
 
+  // Delete To Do Lists
+
+  function deleteList(id) {
+    dispatch({ type: "DELETE_LISTS", payload: id });
+  }
+
+  // Add list
+
+  function addList(item) {
+    dispatch({ type: "ADD_LISTS", payload: item });
+  }
+
   return (
     <GlobalContext.Provider
       value={{
         calories: state.calories,
+        lists: state.lists,
         deleteCalorie,
         addCalorie,
+        deleteList,
+        addList,
       }}
     >
       {children}

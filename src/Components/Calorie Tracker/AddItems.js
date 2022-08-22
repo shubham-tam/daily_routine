@@ -46,7 +46,7 @@ export const AddItems = () => {
           />
         </div>
 
-        <ButtonAdd> Add Items </ButtonAdd>
+        <ButtonAdd> Add Item </ButtonAdd>
       </form>
     </>
   );
